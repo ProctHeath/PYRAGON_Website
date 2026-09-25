@@ -3,8 +3,8 @@ import { createRoot } from "react-dom/client";
 import { ArrowDown, ArrowRight, Instagram, Youtube, Music2, Menu, X } from "lucide-react";
 import "./styles.css";
 
-const profileImage = "public/pyragon-profile.png";
-const aboutMeImage = "public/192.jpg";
+const profileImage = new URL("../public/pyragon-profile.png", import.meta.url).href;
+const aboutMeImage = new URL("../public/192.jpg", import.meta.url).href;
 
 const links = {
   spotify: "https://open.spotify.com/intl-fr/artist/3GlbBkEd2YDP75VwLTm5DA?si=LVF2nld4QRq1mexGCz6ecw",
